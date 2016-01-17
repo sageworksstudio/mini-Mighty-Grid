@@ -1,0 +1,104 @@
+@import "site-settings"; // <-- Edit this file
+
+/* BEGIN DO NOT EDIT */
+@import "components/utils";
+@import "components/mixins";
+@import "components/responsive-grid";
+/* END DO NOT EDIT */
+
+/* - - - - - - - - - - Mobile up to Small Styles - - - - - - - - - - */
+html {
+    font-size: $remBase;
+}
+
+body {
+    background-color: #efefef;
+    color: #999;
+    font-family: $body-font;
+    margin: 0;
+}
+
+h1 { @include remCalc(4.5); }
+h2 { @include remCalc(4  ); }
+h3 { @include remCalc(3.5); }
+h4 { @include remCalc(3  ); }
+h5 { @include remCalc(2.5); }
+h6 { @include remCalc(2  ); }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font;
+}
+
+
+
+/* - - - - - - - - - - BEGIN DEMO Styles - - - - - - - - - - */
+.blue-colp-fixed {
+    color: #efefef;
+    background: #58BEE0;
+    @include colp(.25);
+}
+.red-colp-fixed {
+    color: #efefef;
+    background: #E05858;
+    @include colp(.75);
+}
+.blue-colu-fixed {
+    color: #efefef;
+    background: #58BEE0;
+    @include colu(2.4, 7);
+}
+.red-colu-fixed {
+    color: #efefef;
+    background: #E05858;
+    @include colu(4.6, 7);
+}
+/* - - - - - - - - - - END DEMO Styles - - - - - - - - - - */
+
+
+
+
+/* - - - - - - - - - - Small devices and larger - - - - - - - - - - */
+@include respond-to(sm) {
+
+}
+
+/* - - - - - - - - - - Medium devices and larger - - - - - - - - - - */
+@include respond-to(md) {
+    .top-nav {
+        display: block;
+    }
+    .top-nav-toggle {
+        display: none;
+    }
+    h1 { @include remCalc(5  ); }
+    h2 { @include remCalc(4.5); }
+    h3 { @include remCalc(4  ); }
+    h4 { @include remCalc(3.5); }
+    h5 { @include remCalc(3  ); }
+    h6 { @include remCalc(2.5); }
+}
+
+/* - - - - - - - - - - Large devices and larger - - - - - - - - - - */
+@include respond-to(lg) {
+    h1 { @include remCalc(5.5); }
+    h2 { @include remCalc(5  ); }
+    h3 { @include remCalc(4.5); }
+    h4 { @include remCalc(4  ); }
+    h5 { @include remCalc(3.5); }
+    h6 { @include remCalc(3  ); }
+}
+
+/* - - - - - - - - - - XLarge devices and larger - - - - - - - - - - */
+@include respond-to(xl) {
+    h1 { @include remCalc(6  ); }
+    h2 { @include remCalc(5.5); }
+    h3 { @include remCalc(5  ); }
+    h4 { @include remCalc(4.5); }
+    h5 { @include remCalc(4  ); }
+    h6 { @include remCalc(3.5); }
+}

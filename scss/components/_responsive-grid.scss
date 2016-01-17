@@ -1,0 +1,35 @@
+@function colWidth($fraction) {
+    @return $fraction * 100%;
+}
+
+@include respond-to(sm) {
+    @for $i from 1 through 12 {
+        .col-sm-#{$i}  {
+            width: colWidth($i/12);
+        }
+    }
+}
+
+@include respond-to(md) {
+    @for $i from 1 through 12 {
+        .col-md-#{$i}  {
+            width: colWidth($i/12);
+        }
+    }
+}
+
+@include respond-to(lg) {
+    @for $i from 1 through 12 {
+        .col-lg-#{$i}  {
+            width: colWidth($i/12);
+        }
+    }
+}
+
+@include respond-to(xl) {
+    @for $i from 1 through 12 {
+        .col-xl-#{$i}  {
+            width: colWidth($i/12);
+        }
+    }
+}
