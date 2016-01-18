@@ -11,7 +11,7 @@
 
 Note: if you just want the grid with the default breakpoints (480, 768, 960, 1200) and don't want to compile sass, you can grab the mini-mighty-grid.min.css from the css folder and be on your way.
 
-####SCSS Usage####
+####SASS Usage####
 1. Use SASS to compile `/scss/layout.scss` and export to the css directory. Compiling layout.scss will compile all the mixins and settings into a single css file. You can use whatever method is comfortable for you. The command line might look like `scss --watch layout.scss:../css/layout.css --style compressed`
 2. Edit the _site-settings.scss file to suite your needs.
 
@@ -21,7 +21,7 @@ From the `_site-settings.scss` file you can set:
 - `$gutter` Gutter width for column based grids. (Can be 0)
 - `$breakpoint-map` edit the breakpoints of each screen resolution. (xl should be set to $container width, but can be changed to something else)
 
-The layout.scss file contains some extra settings for responsive breakpoints. If your using sass to compile, you can take advantage of the breakpoint functions that use the breakpoint map. Note: if you are not using sass to compile, then you need to use the standard css @media responsive declarations.
+The layout.scss file contains some extra settings for responsive breakpoints. If your using sass to compile, you can take advantage of the breakpoint functions that use the breakpoint map. Note: if you are not using sass to compile, then you need to use the standard css @media queries.
 ```
 @include respond-to(sm) {
     ... small-to-medium styles here...
@@ -55,7 +55,7 @@ This example would render 1 column for 0 pixels up to medium resolution and 2 co
 ```
 **Example of percentage based layout**
 
-Unlike the column based grid, the percentage grid doesn't use breakpoints. Instead you must define special classes in your scss/css files and use a special sass function to set teh columns widths.
+Unlike the column based grid, the percentage grid doesn't use breakpoints. Instead you must define special classes in your scss/css files and use a special sass function to set the columns widths.
 
 This example would render a row with the first column 25% width and the second column 75% width.
 
