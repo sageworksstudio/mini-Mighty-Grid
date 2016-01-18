@@ -1,38 +1,47 @@
-@import "site-settings"; // <-- Edit this file
+@import "site-settings"; // <-- Edit this file for columns and breakpoints
 
 /* BEGIN DO NOT EDIT */
-@import "components/utils";
-@import "components/mixins";
-@import "components/responsive-grid";
+@import "components/utils";                     // Container, row and column helper styles
+@import "components/columns-grid-mixin";        // Columns based grid
+@import "components/percentage-grid-mixin";     // Percent based grid
+@import "components/floatingPoint-grid-mixin";  // Float-point based grid
+@import "components/responsive-breakpoints";    // Adds responsive breakpoints
 /* END DO NOT EDIT */
 
-/* - - - - - - - - - - Mobile up to Small Styles - - - - - - - - - - */
-html {
-    font-size: $remBase;
+
+
+/* - - - - - - - - - - Put Mobile up-to-Small Styles Here - - - - - - - - - - */
+
+
+
+
+
+
+
+
+
+/* - - - - - - - - - - Responsive Breakpoint Styles Here - - - - - - - - - - */
+/* Small devices and larger */
+@include respond-to(sm) {
+
 }
 
-body {
-    background-color: #efefef;
-    color: #999;
-    font-family: $body-font;
-    margin: 0;
+/* Medium devices and larger */
+@include respond-to(md) {
+
 }
 
-h1 { @include remCalc(4.5); }
-h2 { @include remCalc(4  ); }
-h3 { @include remCalc(3.5); }
-h4 { @include remCalc(3  ); }
-h5 { @include remCalc(2.5); }
-h6 { @include remCalc(2  ); }
+/* Large devices and larger */
+@include respond-to(lg) {
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: $heading-font;
 }
+
+/* XLarge devices and larger */
+@include respond-to(xl) {
+
+}
+
+
 
 
 
@@ -58,47 +67,3 @@ h6 {
     @include colu(4.6, 7);
 }
 /* - - - - - - - - - - END DEMO Styles - - - - - - - - - - */
-
-
-
-
-/* - - - - - - - - - - Small devices and larger - - - - - - - - - - */
-@include respond-to(sm) {
-
-}
-
-/* - - - - - - - - - - Medium devices and larger - - - - - - - - - - */
-@include respond-to(md) {
-    .top-nav {
-        display: block;
-    }
-    .top-nav-toggle {
-        display: none;
-    }
-    h1 { @include remCalc(5  ); }
-    h2 { @include remCalc(4.5); }
-    h3 { @include remCalc(4  ); }
-    h4 { @include remCalc(3.5); }
-    h5 { @include remCalc(3  ); }
-    h6 { @include remCalc(2.5); }
-}
-
-/* - - - - - - - - - - Large devices and larger - - - - - - - - - - */
-@include respond-to(lg) {
-    h1 { @include remCalc(5.5); }
-    h2 { @include remCalc(5  ); }
-    h3 { @include remCalc(4.5); }
-    h4 { @include remCalc(4  ); }
-    h5 { @include remCalc(3.5); }
-    h6 { @include remCalc(3  ); }
-}
-
-/* - - - - - - - - - - XLarge devices and larger - - - - - - - - - - */
-@include respond-to(xl) {
-    h1 { @include remCalc(6  ); }
-    h2 { @include remCalc(5.5); }
-    h3 { @include remCalc(5  ); }
-    h4 { @include remCalc(4.5); }
-    h5 { @include remCalc(4  ); }
-    h6 { @include remCalc(3.5); }
-}

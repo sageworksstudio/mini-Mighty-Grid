@@ -1,35 +1,17 @@
 /*
- * - - - - [ Fonts ]
+ * - - - - [ Grid & Breakpoints - used with the column grid ]
  */
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
-
-$body-font          : 'Roboto Condensed',sans-serif;            // Body font.
-$heading-font       : $body-font;                               // Heading font.
-
-
-
-/*
- * - - - - [ Typography ]
- */
-$remBase            : 16px;                                     // Set base font size.
-$stepDown           : 0.33333;                                  // Used to calculate font step-down with remCalc().
-
-
-
-/*
- * - - - - [ Grid & Breakpoints ]
- */
-$container          : 1200px;                                   // Max width of grid.
-$row                : 100%;                                     // Max width of row.
-$gutter             : 0;                                        // Gutter width. Will be /2 for each col.
+$container          : 1200px;                       // Max width of grid.
+$row                : 100%;                         // Max width of row.
+$gutter             : 0;                            // Gutter width. Will be /2 for each col.
 
 /* Note: breakpoints are set to be that size and up.
  * We don't set a 0-and-up because those are the
  * base styles for mobile first.
  */
 $breakpoint-map: (
-    'sm'            : ( min-width: 480px ),                     // Small up to medium.
-    'md'            : ( min-width: 768px ),                     // Medium up to large.
-    'lg'            : ( min-width: 960px ),                     // Large up to X-Large.
-    'xl'            : ( min-width: 1200px )                     // X-Large and above.
+    'sm'            : ( min-width: 480px ),         // Small up to medium.
+    'md'            : ( min-width: 768px ),         // Medium up to large.
+    'lg'            : ( min-width: 960px ),         // Large up to X-Large.
+    'xl'            : ( min-width: $container )     // X-Large and above.
 );
