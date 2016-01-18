@@ -117,7 +117,7 @@ The sass/css
 ```
 
 ###100% width layouts###
-For 100% width layouts simply use the `.container-fullwidth` style instead of `.container`. This works for all grids.
+For 100% width layouts simply use the `.container-fullwidth` class instead of `.container`. This works for all grids.
 
 Example:
 ```
