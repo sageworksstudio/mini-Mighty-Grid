@@ -132,3 +132,4 @@ Example:
     </div>
 </div>
 ```
+Special thanks to [Francisco](https://github.com/dospuntocero) for the percentage and floating point grids and for making the whole thing 1.6k instead of 2.8!
