@@ -42,7 +42,7 @@ The layout.scss file contains some extra settings for responsive breakpoints. If
 
 This example would render 1 column for 0 pixels up to medium resolution and 2 columns from medium resolution and above.
 ```
-<div class="content">
+<div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-6">
             ...content here...
@@ -63,7 +63,7 @@ Note the name of the sass function is colp().
 
 The HTML
 ```
-<div class="content">
+<div class="container">
     <div class="row">
         <div class="column-a">
             ...content here...
@@ -94,7 +94,7 @@ Note the name of the sass function is colu().
 
 The HTML
 ```
-<div class="content">
+<div class="container">
     <div class="row">
         <div class="column-a">
             ...content here...
@@ -121,7 +121,7 @@ For 100% width layouts simply use the `.container-fullwidth` class instead of `.
 
 Example:
 ```
-<div class="content-fullwidth">
+<div class="container-fullwidth">
     <div class="row">
         <div class="col-sm-12 col-md-6">
             ...content here...
