@@ -1,7 +1,6 @@
-@import "site-settings"; // <-- Edit this file for columns and breakpoints
+@import "site-settings";                        // <-- Edit this file for columns and breakpoints
 
 /* BEGIN DO NOT EDIT */
-@import "components/utils";                     // Container, row and column helper styles
 @import "components/columns-grid-mixin";        // Columns based grid
 @import "components/percentage-grid-mixin";     // Percent based grid
 @import "components/floatingPoint-grid-mixin";  // Float-point based grid
@@ -22,22 +21,22 @@
 
 /* - - - - - - - - - - Responsive Breakpoint Styles Here - - - - - - - - - - */
 /* Small devices and larger */
-@include respond-to(sm) {
+@include respond(sm) {
 
 }
 
 /* Medium devices and larger */
-@include respond-to(md) {
+@include respond(md) {
 
 }
 
 /* Large devices and larger */
-@include respond-to(lg) {
+@include respond(lg) {
 
 }
 
 /* XLarge devices and larger */
-@include respond-to(xl) {
+@include respond(xl) {
 
 }
 

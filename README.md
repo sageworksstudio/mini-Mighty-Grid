@@ -23,16 +23,16 @@ From the `_site-settings.scss` file you can set:
 
 The layout.scss file contains some extra settings for responsive breakpoints. If your using sass to compile, you can take advantage of the breakpoint functions that use the breakpoint map. Note: if you are not using sass to compile, then you need to use the standard css @media queries.
 ```
-@include respond-to(sm) {
+@include respond(sm) {
     ... small-to-medium styles here...
 }
-@include respond-to(md) {
+@include respond(md) {
     ... medium-to-large styles here...
 }
-@include respond-to(lg) {
+@include respond(lg) {
     ... large-to-xlarge styles here...
 }
-@include respond-to(xl) {
+@include respond(xl) {
     ... xlarge-and-above styles here...
 }
 ```
