@@ -10,8 +10,9 @@ $gutter             : 0;                            // Gutter width. Will be /2 
  * base styles for mobile first.
  */
 $breakpoint-map: (
-    'sm'            : ( min-width: 480px ),         // Small up to medium.
-    'md'            : ( min-width: 768px ),         // Medium up to large.
+    'xs'            : ( min-width: 0px ),           // XSmall up to Small.
+    'sm'            : ( min-width: 480px ),         // Small up to Medium.
+    'md'            : ( min-width: 768px ),         // Medium up to Large.
     'lg'            : ( min-width: 960px ),         // Large up to X-Large.
     'xl'            : ( min-width: $container )     // X-Large and above.
 );

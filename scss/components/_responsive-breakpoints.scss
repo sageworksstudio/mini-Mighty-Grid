@@ -15,6 +15,14 @@
     @return $fraction * 100%;
 }
 
+@include respond(xs) {
+    @for $i from 1 through 12 {
+        .col-xs-#{$i}  {
+            width: colWidth($i/12);
+        }
+    }
+}
+
 @include respond(sm) {
     @for $i from 1 through 12 {
         .col-sm-#{$i}  {

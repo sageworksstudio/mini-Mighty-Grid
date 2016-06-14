@@ -1,9 +1,11 @@
-.container *,
-.container-fullwidth *{
+.fullwidth-container {
     box-sizing: border-box;
     width: 100%;
 }
-.container *{
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     max-width: $container;
@@ -17,9 +19,15 @@
 }
 
 [class*='col-'] {
+    box-sizing: border-box;
     float: left;
     min-height: 1px;
-    padding-left: $gutter;
-    padding-right: $gutter;
+    padding-left: $gutter / 2 + px;
+    padding-right: $gutter / 2 + px;
     position: relative;
+}
+
+.fullwidth-container .row [class*='col-'] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
