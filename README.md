@@ -1,6 +1,6 @@
 #The mini Mighty Grid!#
 
-**mini Mighty Grid is 3 grids in one. And all at an overhead of only 1.6k minified without the demo styles! And as low as 323 bytes if you don't need breakpoints and compile your own css!**
+**mini Mighty Grid is 3 grids in one. And all at an overhead of only 2.1k minified without the demo styles! And as low as 475 bytes if you don't need breakpoints and compile your own css!**
 
 - Responsive, standard, 12 column grid
 - Responsive, percentage grid based that you can use any combination of percentages that equall 100%
@@ -9,7 +9,7 @@
 ###Requires###
 [Sass](http://sass-lang.com/), CSS extension language.
 
-Note: if you just want the grid with the default breakpoints (0, 480, 768, 960, 1200) and don't want to compile sass, you can download the default branch of this repo, grab the "mini-mighty-grid.min.css" and be on your way.
+Note: if you just want the grid with the default breakpoints (0, 480, 768, 960, 1200) and don't want to compile sass, you can download the "default" branch of this repo, grab the "mini-mighty-grid.min.css" and be on your way.
 
 ####SASS Usage####
 1. Use SASS to compile `/scss/layout.scss` and export to the css directory. Compiling layout.scss will compile all the mixins and settings into a single css file. You can use whatever method is comfortable for you. The command line might look like `scss --watch layout.scss:../css/layout.css --style compressed`
@@ -132,4 +132,4 @@ Example:
     </div>
 </div>
 ```
-Special thanks to [Francisco](https://github.com/dospuntocero) for the percentage and floating point grids and for making the whole thing 1.6k instead of 2.8!
+Special thanks to [Francisco](https://github.com/dospuntocero) for the percentage and floating point grids!
