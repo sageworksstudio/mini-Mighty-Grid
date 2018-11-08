@@ -1,10 +1,10 @@
 #The mini Mighty Grid!#
 
-**mini Mighty Grid is 3 grids in one. And all at an overhead of only 2.1k minified without the demo styles! And as low as 475 bytes if you don't need breakpoints and compile your own css!**
-
-- Responsive, standard, 12 column grid
-- Responsive, percentage grid based that you can use any combination of percentages that equall 100%
-- Responsive, floating point grid that you set whatever number you choose as 100% and with any combination of column widths that total that 100%
+**mini Mighty Grid is 4 grids in one. And all at an overhead of only 2.9k, minified, without the demo styles. And only 51 (fifty-one!) bytes if you don't need a columns grid.**
+- Modern, simplified CSS Grid
+- Legacy, responsive, columns, float grid
+- Legacy, responsive, percentage, float grid
+- Legacy, responsive, floating point, float grid
 
 ###Requires###
 [Sass](http://sass-lang.com/), CSS extension language.

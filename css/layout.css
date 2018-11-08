@@ -1,2 +1,439 @@
-.fullwidth-container{box-sizing:border-box;width:100%}.container{box-sizing:border-box;width:100%;margin-left:auto;margin-right:auto;max-width:1200px}.row:before,.row:after{clear:both;content:"";display:table}[class*='col-']{box-sizing:border-box;float:left;min-height:1px;padding-left:0px;padding-right:0px;position:relative}.fullwidth-container .row [class*='col-']{padding-left:0 !important;padding-right:0 !important}@media (min-width: 0px){.col-xs-1{width:8.33333%}.col-xs-2{width:16.66667%}.col-xs-3{width:25%}.col-xs-4{width:33.33333%}.col-xs-5{width:41.66667%}.col-xs-6{width:50%}.col-xs-7{width:58.33333%}.col-xs-8{width:66.66667%}.col-xs-9{width:75%}.col-xs-10{width:83.33333%}.col-xs-11{width:91.66667%}.col-xs-12{width:100%}}@media (min-width: 480px){.col-sm-1{width:8.33333%}.col-sm-2{width:16.66667%}.col-sm-3{width:25%}.col-sm-4{width:33.33333%}.col-sm-5{width:41.66667%}.col-sm-6{width:50%}.col-sm-7{width:58.33333%}.col-sm-8{width:66.66667%}.col-sm-9{width:75%}.col-sm-10{width:83.33333%}.col-sm-11{width:91.66667%}.col-sm-12{width:100%}}@media (min-width: 768px){.col-md-1{width:8.33333%}.col-md-2{width:16.66667%}.col-md-3{width:25%}.col-md-4{width:33.33333%}.col-md-5{width:41.66667%}.col-md-6{width:50%}.col-md-7{width:58.33333%}.col-md-8{width:66.66667%}.col-md-9{width:75%}.col-md-10{width:83.33333%}.col-md-11{width:91.66667%}.col-md-12{width:100%}}@media (min-width: 960px){.col-lg-1{width:8.33333%}.col-lg-2{width:16.66667%}.col-lg-3{width:25%}.col-lg-4{width:33.33333%}.col-lg-5{width:41.66667%}.col-lg-6{width:50%}.col-lg-7{width:58.33333%}.col-lg-8{width:66.66667%}.col-lg-9{width:75%}.col-lg-10{width:83.33333%}.col-lg-11{width:91.66667%}.col-lg-12{width:100%}}@media (min-width: 1200px){.col-xl-1{width:8.33333%}.col-xl-2{width:16.66667%}.col-xl-3{width:25%}.col-xl-4{width:33.33333%}.col-xl-5{width:41.66667%}.col-xl-6{width:50%}.col-xl-7{width:58.33333%}.col-xl-8{width:66.66667%}.col-xl-9{width:75%}.col-xl-10{width:83.33333%}.col-xl-11{width:91.66667%}.col-xl-12{width:100%}}.blue-colp-fixed{color:#efefef;background:#58BEE0;width:25%;float:left}.red-colp-fixed{color:#efefef;background:#E05858;width:75%;float:left}.blue-colu-fixed{color:#efefef;background:#58BEE0;width:34.28571%;float:left}.red-colu-fixed{color:#efefef;background:#E05858;width:65.71429%;float:left}
+/**
+ * The breakpoint-map is just a set of key:'value' pairs.
+ * Your key can be anything. Your value must be a valid @media query.
+ *
+ * ***HTML REFERENCE *** 
+ * Set responsive columns classes:
+ * <div class="col-xs-12 col-cthulu-6">
+ *
+ */
+/* Breakpoints based on defined $breakpoint-map */
+@media only screen and (min-width: 0px ) {
+  .col-xs-1 {
+    width: 8.3333333333%;
+  }
+
+  .col-xs-2 {
+    width: 16.6666666667%;
+  }
+
+  .col-xs-3 {
+    width: 25%;
+  }
+
+  .col-xs-4 {
+    width: 33.3333333333%;
+  }
+
+  .col-xs-5 {
+    width: 41.6666666667%;
+  }
+
+  .col-xs-6 {
+    width: 50%;
+  }
+
+  .col-xs-7 {
+    width: 58.3333333333%;
+  }
+
+  .col-xs-8 {
+    width: 66.6666666667%;
+  }
+
+  .col-xs-9 {
+    width: 75%;
+  }
+
+  .col-xs-10 {
+    width: 83.3333333333%;
+  }
+
+  .col-xs-11 {
+    width: 91.6666666667%;
+  }
+
+  .col-xs-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 480px ) {
+  .col-sm-1 {
+    width: 8.3333333333%;
+  }
+
+  .col-sm-2 {
+    width: 16.6666666667%;
+  }
+
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  .col-sm-4 {
+    width: 33.3333333333%;
+  }
+
+  .col-sm-5 {
+    width: 41.6666666667%;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  .col-sm-7 {
+    width: 58.3333333333%;
+  }
+
+  .col-sm-8 {
+    width: 66.6666666667%;
+  }
+
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  .col-sm-10 {
+    width: 83.3333333333%;
+  }
+
+  .col-sm-11 {
+    width: 91.6666666667%;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 640px ) {
+  .col-md-1 {
+    width: 8.3333333333%;
+  }
+
+  .col-md-2 {
+    width: 16.6666666667%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.3333333333%;
+  }
+
+  .col-md-5 {
+    width: 41.6666666667%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.3333333333%;
+  }
+
+  .col-md-8 {
+    width: 66.6666666667%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.3333333333%;
+  }
+
+  .col-md-11 {
+    width: 91.6666666667%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px ) {
+  .col-ml-1 {
+    width: 8.3333333333%;
+  }
+
+  .col-ml-2 {
+    width: 16.6666666667%;
+  }
+
+  .col-ml-3 {
+    width: 25%;
+  }
+
+  .col-ml-4 {
+    width: 33.3333333333%;
+  }
+
+  .col-ml-5 {
+    width: 41.6666666667%;
+  }
+
+  .col-ml-6 {
+    width: 50%;
+  }
+
+  .col-ml-7 {
+    width: 58.3333333333%;
+  }
+
+  .col-ml-8 {
+    width: 66.6666666667%;
+  }
+
+  .col-ml-9 {
+    width: 75%;
+  }
+
+  .col-ml-10 {
+    width: 83.3333333333%;
+  }
+
+  .col-ml-11 {
+    width: 91.6666666667%;
+  }
+
+  .col-ml-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 960px ) {
+  .col-lg-1 {
+    width: 8.3333333333%;
+  }
+
+  .col-lg-2 {
+    width: 16.6666666667%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.3333333333%;
+  }
+
+  .col-lg-5 {
+    width: 41.6666666667%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.3333333333%;
+  }
+
+  .col-lg-8 {
+    width: 66.6666666667%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.3333333333%;
+  }
+
+  .col-lg-11 {
+    width: 91.6666666667%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .col-xl-1 {
+    width: 8.3333333333%;
+  }
+
+  .col-xl-2 {
+    width: 16.6666666667%;
+  }
+
+  .col-xl-3 {
+    width: 25%;
+  }
+
+  .col-xl-4 {
+    width: 33.3333333333%;
+  }
+
+  .col-xl-5 {
+    width: 41.6666666667%;
+  }
+
+  .col-xl-6 {
+    width: 50%;
+  }
+
+  .col-xl-7 {
+    width: 58.3333333333%;
+  }
+
+  .col-xl-8 {
+    width: 66.6666666667%;
+  }
+
+  .col-xl-9 {
+    width: 75%;
+  }
+
+  .col-xl-10 {
+    width: 83.3333333333%;
+  }
+
+  .col-xl-11 {
+    width: 91.6666666667%;
+  }
+
+  .col-xl-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) and (pointer: coarse) {
+  .col-cthulu-1 {
+    width: 8.3333333333%;
+  }
+
+  .col-cthulu-2 {
+    width: 16.6666666667%;
+  }
+
+  .col-cthulu-3 {
+    width: 25%;
+  }
+
+  .col-cthulu-4 {
+    width: 33.3333333333%;
+  }
+
+  .col-cthulu-5 {
+    width: 41.6666666667%;
+  }
+
+  .col-cthulu-6 {
+    width: 50%;
+  }
+
+  .col-cthulu-7 {
+    width: 58.3333333333%;
+  }
+
+  .col-cthulu-8 {
+    width: 66.6666666667%;
+  }
+
+  .col-cthulu-9 {
+    width: 75%;
+  }
+
+  .col-cthulu-10 {
+    width: 83.3333333333%;
+  }
+
+  .col-cthulu-11 {
+    width: 91.6666666667%;
+  }
+
+  .col-cthulu-12 {
+    width: 100%;
+  }
+}
+[class*=col-] {
+  float: left;
+  min-height: 1px;
+  position: relative;
+}
+
+.row:before,
+.row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Column based on known percentages */
+/* Floating point grid */
+/**
+ *
+ * @mixin simple-grid();
+ *
+ * A very basic grid for very basic grid needs. Intended to replace float grids.
+ * 
+ * Takes 5 arguements:
+ * $cols    Columns, can be any value 'grid-template-columns' accepts. Default: 1fr
+ * $rows    Rows, can be any value 'grid-auto-rows' allows. Default: auto
+                NOTE: 'auto' will cause all cells, in all rows, to be equal height
+ * $gutter  Gutter, can be any value 'gap' allows. Default: 1rem
+ * $margin  Margin, the outer margin of the grid. Can be any value(s) 'margin' accepts. Default: 0
+ * $width   Max-width, can be any value 'max-width' allows. Default: 100%
+ *
+ * Example: simple-grid(1fr 1fr 1fr, auto, 5px, 1em, 768px)
+ *
+ */
+/* - - - - - - - - - - BEGIN DEMO Styles - - - - - - - - - - */
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 768px;
+}
+.grid-container div {
+  background-color: black;
+  color: white;
+  padding: 0.5em;
+}
+
+.blue-colp-fixed {
+  color: #efefef;
+  background: #58BEE0;
+  width: 25%;
+  float: left;
+}
+
+.red-colp-fixed {
+  color: #efefef;
+  background: #E05858;
+  width: 75%;
+  float: left;
+}
+
+.blue-colu-fixed {
+  color: #efefef;
+  background: #58BEE0;
+  width: 34.2857142857%;
+  float: left;
+}
+
+.red-colu-fixed {
+  color: #efefef;
+  background: #E05858;
+  width: 65.7142857143%;
+  float: left;
+}
+
+/* - - - - - - - - - - END DEMO Styles - - - - - - - - - - */
+
 /*# sourceMappingURL=layout.css.map */

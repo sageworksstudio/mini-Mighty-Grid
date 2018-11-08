@@ -1,49 +1,39 @@
-@import "site-settings";                        // <-- Edit this file for columns and breakpoints
+@import "columns-grid-settings";                // <-- Define column grid parameters
+                                                // Only used for columns grid.
 
 @import "components/columns-grid-mixin";        // Columns based grid
 @import "components/percentage-grid-mixin";     // Percent based grid
 @import "components/floatingPoint-grid-mixin";  // Float-point based grid
-@import "components/responsive-breakpoints";    // Adds responsive breakpoints
+@import "components/css-grid-mixin";            // Lightweight CSS Grid
 
-
-
-
-/* - - - - - - - - - - Put XSmall up-to Small Styles Here - - - - - - - - - - */
-
-
-
-
-
-
-
-
-
-/* - - - - - - - - - - Responsive Breakpoint Styles Here - - - - - - - - - - */
-/* Small devices and larger */
-@include respond(sm) {
-
-}
-
-/* Medium devices and larger */
-@include respond(md) {
-
-}
-
-/* Large devices and larger */
-@include respond(lg) {
-
-}
-
-/* XLarge devices and larger */
-@include respond(xl) {
-
-}
 
 
 
 
 
 /* - - - - - - - - - - BEGIN DEMO Styles - - - - - - - - - - */
+
+
+
+$box-sizing  : border-box; // box model
+
+$container   : 1024px;
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $container;
+}
+.grid-container {
+    @include simple-grid(1fr 1fr 1fr, auto, 1rem, 0 auto, 768px);
+    div {
+        background-color: black;
+        color: white;
+        padding: .5em;
+    }
+}
 .blue-colp-fixed {
     color: #efefef;
     background: #58BEE0;
