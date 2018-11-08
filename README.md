@@ -35,12 +35,11 @@ To include the Simple Grid, just include the mixin in your html container elemen
 Example: `.grid-container {@include simple-grid(1fr 1fr 1fr, auto, 5px, 1em, 768px);}`
 
 Simple Grid takes 5 arguements:
-- $cols    Columns, can be any value 'grid-template-columns' accepts. Default: 1fr
-- $rows    Rows, can be any value 'grid-auto-rows' allows. Default: auto
-                NOTE: 'auto' will cause all cells, in all rows, to be equal height
-- $gutter  Gutter, can be any value 'gap' allows. Default: 1rem
-- $margin  Margin, the outer margin of the grid. Can be any value(s) 'margin' accepts. Default: 0
-- $width   Max-width, can be any value 'max-width' allows. Default: 100%
+- `$cols`    Columns, can be any value 'grid-template-columns' accepts. Default: 1fr
+- `$rows`    Rows, can be any value 'grid-auto-rows' allows. Default: auto **NOTE:** 'auto' will cause all cells, in all rows, to be equal height
+- `$gutter`  Gutter, can be any value 'gap' allows. Default: 1rem
+- `$margin`  Margin, the outer margin of the grid. Can be any value(s) 'margin' accepts. Default: 0
+- `$width`   Max-width, can be any value 'max-width' allows. Default: 100%
 
 **HTML Usage**
 
