@@ -1,35 +1,40 @@
 # The mini Mighty Grid! #
 
-**mini Mighty Grid is 4 grids in one. And all at an overhead of only 2.9k, minified, without the demo styles. And only 51 (fifty-one!) bytes if you don't need a columns grid.**
-- Modern, simplified CSS Grid
-- Legacy, responsive, columns, float grid
-- Legacy, responsive, percentage, float grid
-- Legacy, responsive, floating point, float grid
+**mini Mighty Grid is 4 grids in one. And all at an overhead of only 2.4k, minified, without the demo styles. And only 51 (fifty-one!) bytes if you don't need a columns grid.**
+
+- Simple Grid: Modern, simplified CSS Grid
+- Columns Grid: Responsive-columns, float grid
+- Percentage Grid: Responsive, percentage-based, float grid
+- Floating Point Grid: Responsive, floating point, float grid
+
+**Why four grids?**
+
+Because designers do crazy things. And crazy things don't always fit into a single grid solution. Not only do each of these grids solve a unique problem, but they can all be used together -- even nested!
 
 ## Requires ##
 
 [Sass](http://sass-lang.com/), CSS extension language.
 
-Note: if you just want the grid with the default breakpoints (0, 480, 768, 960, 1200) and don't want to compile sass, you can download the "default" branch of this repo, grab the "layout.min.css" and be on your way.
+Note: If you just want all the grids with the default breakpoints (0, 480, 768, 960, 1200) and don't want to compile sass, you can download the `/css/layout.min.css` file and be on your way. Or if you don't need a columns grid at all you can do the same for `/css/layout-no-cols.min.css`.
 
-## How TO Use ##
+## How To Use ##
 
 You have a choice of 4 different grids. As-is, all are enabled. You can use any one, or any combination of grids together. You can even nest different grids.
 
-Just edit the main `/scss/layout.scss` file to include or remove the components you want. CSS Grid, Percentage Grid and Floating Point Grids all work without an additional includes. But the Columns Grid requires the `/scss/_columns-grid-settings.scss` file to be included.
+Just edit the main `/scss/layout.scss` file to include or remove the components you want. Simple Grid, Percentage Grid and Floating Point Grid all work without any additional includes. But the Columns Grid requires the `/scss/_columns-grid-settings.scss` file to be included.
 
 
-### The Grids ###
+## The Grids ##
 
-#### CSS Grid ####
+### Simple Grid (css grid) ###
 
-A very basic grid for very basic grid needs. Intended to replace float grids. CSS Grid uses only a small portion of the full range of what CSS Grids are capable of. If you need something more you should create your own custom grids.
+A very basic grid for very basic grid needs. Intended to be a modern replacement for float grids. This implementation of a CSS Grid uses only a small portion of the full range of what CSS Grids are capable of. If you need something more you should create your own custom grid or use this as a jumping off point.
 
-To include the css grid, just include the mixin in your html container element.
+To include the Simple Grid, just include the mixin in your html container element.
 
-Example: `@include simple-grid(1fr 1fr 1fr, auto, 5px, 1em, 768px);`
+Example: `.grid-container {@include simple-grid(1fr 1fr 1fr, auto, 5px, 1em, 768px);}`
 
-CSS Grid takes 5 arguements:
+Simple Grid takes 5 arguements:
 - $cols    Columns, can be any value 'grid-template-columns' accepts. Default: 1fr
 - $rows    Rows, can be any value 'grid-auto-rows' allows. Default: auto
                 NOTE: 'auto' will cause all cells, in all rows, to be equal height
@@ -59,7 +64,7 @@ CSS Grid takes 5 arguements:
 </article>
 ```
 
-#### Columns Grid ####
+### Columns Grid ###
 
 The columns grid is a classic float grid. It uses rows and columns to create a basic grid layout.
 
@@ -84,7 +89,7 @@ This example would render 1 column for 0 pixels up to medium resolution and 2 co
 </div>
 ```
 
-#### Percentage Grid ####
+### Percentage Grid ###
 
 Unlike the column based grid, the percentage grid doesn't use breakpoints. Instead you must define special classes in your scss/css files and use a special sass function to set the columns widths.
 
@@ -116,7 +121,7 @@ Note the name of the sass function is colp().
 }
 ```
 
-#### Floating Point Grid ####
+### Floating Point Grid ###
 
 The floating point grid works almost exactly like the percentage grid with two exceptions. The widths are expressed in floating point numbers that equal 100% of the total units given and the sass function receives 2 variables. The floating point number and total units.
 

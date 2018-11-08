@@ -2,6 +2,9 @@
  * The breakpoint-map is just a set of key:'value' pairs.
  * Your key can be anything. Your value must be a valid @media query.
  *
+ * In other words, something like this is valid:
+ * cthulu  : 'only screen and (min-width: 1024px) and (pointer: coarse)'
+ *
  * ***HTML REFERENCE *** 
  * Set responsive columns classes:
  * <div class="col-xs-12 col-cthulu-6">
@@ -299,55 +302,6 @@
   }
 
   .col-xl-12 {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 1024px) and (pointer: coarse) {
-  .col-cthulu-1 {
-    width: 8.3333333333%;
-  }
-
-  .col-cthulu-2 {
-    width: 16.6666666667%;
-  }
-
-  .col-cthulu-3 {
-    width: 25%;
-  }
-
-  .col-cthulu-4 {
-    width: 33.3333333333%;
-  }
-
-  .col-cthulu-5 {
-    width: 41.6666666667%;
-  }
-
-  .col-cthulu-6 {
-    width: 50%;
-  }
-
-  .col-cthulu-7 {
-    width: 58.3333333333%;
-  }
-
-  .col-cthulu-8 {
-    width: 66.6666666667%;
-  }
-
-  .col-cthulu-9 {
-    width: 75%;
-  }
-
-  .col-cthulu-10 {
-    width: 83.3333333333%;
-  }
-
-  .col-cthulu-11 {
-    width: 91.6666666667%;
-  }
-
-  .col-cthulu-12 {
     width: 100%;
   }
 }
