@@ -1,3 +1,7 @@
+![](https://img.shields.io/github/release/digi-brains/mini-Mighty-Grid.svg?style=flat-square)
+![](https://img.shields.io/github/license/digi-brains/mini-Mighty-Grid.svg?style=flat-square)
+![](https://img.shields.io/github/issues/digi-brains/mini-Mighty-Grid.svg?style=flat-square)
+
 # The mini Mighty Grid! #
 
 **mini Mighty Grid is 4 grids in one. And all at an overhead of only 2.4k, minified, without the demo styles. And only 51 (fifty-one!) bytes if you don't need a columns grid.**
